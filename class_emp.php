@@ -24,6 +24,7 @@ class employ extends person{
         if($new_name == 'Ayaz'){
             $this->name = strtoupper($new_name); 
         }else{
+            //:: this operator used to access the parant class method
             person::set_name($new_name);
         }
     }
